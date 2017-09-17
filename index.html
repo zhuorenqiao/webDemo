@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesh<input type="number" name="" value="" placeholder="">eet" href="">
+</head>
+<body>
+	<script>
+		
+		var obj = {
+			name: 'zrq',
+			age: 12,
+			showInfo() {
+				console.log(this.name + '的年龄是' + this.age + '岁了');
+			}
+		}
+        
+        var Mi = {
+        	name: 'gd',
+        	age: 44
+        }
+
+       obj.showInfo.call(Mi, Mi.name, Mi.age);
+
+	</script>
+</body>
+</html>
